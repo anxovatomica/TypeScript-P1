@@ -14,7 +14,7 @@ function start() {
     btn2.addEventListener("click", (e: Event) => this.ej3(), false);
 }
 /**
- * This function shows a list of properties(EX1)
+ * This function shows a list of properties (EX1)
  */
 function muestraMSN() {
     var i = new Date();
@@ -33,14 +33,14 @@ function muestraMSN() {
         "<li>" + " Random number between 0 and 200: " + Math.random() * 201 + "</li>" +
         "<li>" + " OS: " + navigator.platform + "</li>" +
         "<li>" + " Today's date: " +i + "</li>" +
-        "<li>" + "Concrete date(17:15h): " +i2 + "</li>" +
+        "<li>" + " Concrete date(17:15h): " +i2 + "</li>" +
         "</ol>";
 }
 
 var num = []; // Number's array
 var char = []; //Text's array
 /**
- * Here is where the result is showed in a div
+ * Here is where the result is showed in a div (EX2)
  */
 function ej2() {
 
@@ -84,7 +84,7 @@ function ej2() {
         }
     }
 }
-// Function that opens "play.html" in a new window
+// Function that opens "play.html" in a new window (EX3)
 function ej3(){
     var newWindow = window.open('/a/play.html');
 }
