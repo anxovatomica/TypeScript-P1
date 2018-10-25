@@ -7,7 +7,7 @@
 window.addEventListener('load', start, false);
 /** First and main function where everything starts **/
 function start() {
-    //Function that starts a countdown from the sceonds you sned
+    //Function that starts a countdown from the sceonds you send (C)
     countdown(7); 
     //save button with id = "inp" in var = "btn"
     let btn = document.getElementById("inp"); 
@@ -22,7 +22,7 @@ function start() {
  */ 
 function main() {
 
-    // Generate a number between 0 and 10 (both included)
+    // Generate a number between 0 and 10 (both included) (A)
     var rnd = rdnInt(0, 10); 
     //Get the value inside the input text
     var txt = (<HTMLInputElement>document.getElementById('text')).value; 
@@ -42,7 +42,7 @@ function main() {
         div.innerHTML += " Random number: " + rnd + " <br> ";
     }
 }
-/* This fuction starts a countdown begining from the second you send */ 
+/* This fuction starts a countdown begining from the second you send (C) */ 
 function countdown(seconds) {
     var counter = seconds;
     var div = window.document.getElementById('cd');
@@ -51,11 +51,11 @@ function countdown(seconds) {
         counter--;
         if (counter < 0) {
             clearInterval(interval);
-            window.close(); // When the counter = 0 the window is closed
+            window.close(); // When the counter = 0 the window is closed (C)
         };
     }, 1000);
 };
-/* Here is just a random number generator with integer numbers */ 
+/* Here is just a random number generator with integer numbers (A) */ 
 function rdnInt(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
