@@ -42,7 +42,7 @@ function main() {
         div.innerHTML += " Random number: " + rnd + " <br> ";
     }
 }
-/* This fuction starts a countdown begining from the second you send*/ 
+/* This fuction starts a countdown begining from the second you send */ 
 function countdown(seconds) {
     var counter = seconds;
     var div = window.document.getElementById('cd');
@@ -55,7 +55,7 @@ function countdown(seconds) {
         };
     }, 1000);
 };
-/*Here is just a random number generator with integer numbers*/ 
+/* Here is just a random number generator with integer numbers */ 
 function rdnInt(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
