@@ -1,3 +1,8 @@
+/**
+ * Author: Marcel Dufol
+ * DAW2
+ * 2018-19
+ */
 /*When the page is load, the function "start()" is called */
 window.addEventListener('load', start, false);
 /** First and main function where everything starts **/
@@ -10,6 +15,7 @@ function start() {
     // the function "main()" is called
     btn.addEventListener("click", (e: Event) => this.main(), false);
 }
+
 /**
  *  "main()" is a function that compares the number wrote in the input text
  *  with a number generated with the function "rdnInt()"
