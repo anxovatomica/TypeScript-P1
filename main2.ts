@@ -15,7 +15,6 @@ function start() {
     // the function "main()" is called
     btn.addEventListener("click", (e: Event) => this.main(), false);
 }
-
 /**
  *  "main()" is a function that compares the number wrote in the input text
  *  with a number generated with the function "rdnInt()"
@@ -34,12 +33,15 @@ function main() {
         div.innerHTML += " The number matched <br> ";
         div.innerHTML += " Number entered: " + txt;
         div.innerHTML += " Random number: " + rnd + " <br> ";
+        //Return this message to main page
+        window.opener.document.getElementById("msg").innerHTML = " The number matched <br> ";
         window.close();
     } //If not
     else {
         div.innerHTML += " The number doesn't matched <br> ";
         div.innerHTML += " Number entered: " + txt;
         div.innerHTML += " Random number: " + rnd + " <br> ";
+        window.opener.document.getElementById("msg").innerHTML = " The number doesn't matched <br> ";
     }
 }
 /* This fuction starts a countdown begining from the second you send (C) */ 

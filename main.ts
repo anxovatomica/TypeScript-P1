@@ -86,5 +86,5 @@ function ej2() {
 }
 // Function that opens "play.html" in a new window (EX3)
 function ej3(){
-    var newWindow = window.open('/a/play.html'); // (B)
+    var newWindow = window.open('/Practica1-TypeScript/play.html'); // (B)
 }
